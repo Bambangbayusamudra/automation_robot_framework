@@ -60,6 +60,12 @@ Web tables
     Click Element 	${delete} 
     sleep   3s
 Page Buttons
+    #Clear Chache
+    # Execute JavaScript    location.reload(true)
+    # Execute JavaScript    window.localStorage.clear()
+    # Execute JavaScript    window.sessionStorage.clear()
+    # sleep   2s
+    
     Click Element   ${pagebutton}
     Doubleclick Element 	 ${doubleklik}	 	 
     Click Element 	 (//div[button[text()='Click Me']]//button[@class="btn btn-primary"])[1]
