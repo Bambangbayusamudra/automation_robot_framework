@@ -41,6 +41,9 @@ home='xpath=//*[@id="simpleLink"]'
 # //p[@class='checkout-dialog-text-a']/../div/div/a[.='Nanti']
 #  xpath=(//tr[td[text()='${new_create_division_save}']]//button[@class="btn btn-action d-flex text-white justify-content-center"])[1]
 
+# start date
+# ${start} =    Evaluate    datetime.datetime.now()    modules=datetime
+
 #web sulusi button dinamis
 # https://forum.robotframework.org/t/how-to-handle-button-on-the-dynamic-body/4410
 # https://stackoverflow.com/questions/70836692/how-to-locate-an-id-of-the-button-to-click-when-id-is-dynamic-in-robot-framework
